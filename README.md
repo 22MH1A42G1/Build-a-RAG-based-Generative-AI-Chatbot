@@ -1,3 +1,3 @@
-# Building-a-chatbot-with-Amazon-Lex
+# Build a RAG based Generative AI Chatbot
 
-Building a conversational chatbot that retrieves information from a third-party service and returns it to the user on request. Afterwards, we will integrate the chatbot into an Angular application.
+Amazon Bedrock Knowledge Bases streamline RAG chatbot creation (e.g., 20 mins) via automated data ingestion, retrieval, and augmentation. Build in the AWS console using Bedrock's API (pay-per-token) and models like Claude 3. For a "tax advice" bot: create a knowledge base, assign a role, and link an S3 bucket with tax data. Configure chunking/parsing (customize or use defaults like 500 tokens, 10% overlap). Customize with Lambda. Use Cohere Embed English V3. "Quick create" uses Amazon OpenSearch Serverless (Pinecone supported). Bedrock provisions OpenSearch Serverless and syncs S3 data (minutes to hours), fetching, chunking, embedding, and storing it. Review warnings/failures. Vector collection displays data. Review index config (Faiss, Euclidean). Verify data via OpenSearch. Test with Claude 3 Haiku via retrieve/retrieveAndGenerate APIs for chatbot creation.
